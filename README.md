@@ -4,11 +4,6 @@ This is a simple realtime chat application built with ReactJs and Firebase.
 
 ![alt text](https://github.com/kayprogrammer/kaychat-reactjs/blob/main/display.png?raw=true)
 
-### Built with...
-* ReactJs
-* Firebase
-* Google authentication
-
 ### How to Test Locally...
 
 * Download this repository
