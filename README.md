@@ -10,7 +10,7 @@ This is a simple realtime chat application built with ReactJs and Firebase.
 
 Run:
 * `npm install` to install all dependencies
-* `npm run serve` to start the local server.
+* `npm start` to start the local server.
 
 Check [http://localhost:3000](http://localhost:3000) to view application on your browser.
 
