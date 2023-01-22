@@ -96,37 +96,39 @@ Check [http://localhost:3000](http://localhost:3000) to view application on your
     
     Update jwt object with the tokens and return the tokens as response
 
-### Google Auth
-    Get auth token from a response in client when signin is initiated, Here's a link I created you can use to generate auth_token... [Creator Africa Google](https://creators-africa-test.netlify.app/google-auth). You find the auth_token as 'credential' in the browser's console.
+### Google Auth ([Frontend link](https://creators-africa-test.netlify.app/google-auth))
+    I created a simple client page for testing. Check the link above... You'll find the auth_token as 'credential' in the browser's console after initiating the sign in.
+    
+    While your backend server is still running:
+        Fill in the required fields as implemented by the schema (auth_token, is_creator). is_creator is optional because of login.
 
-    Fill in the required fields as implemented by the schema (auth_token, is_creator). is_creator is optional because of login.
-    
-    Validate the auth token using a python google library.
-    
-    Compare google client ids to ensure the client_id in frontend is same as backend
-    
-    Register or login user based on the returned data (email, name). This works by checking for the user with that email in our db. 
-    
-    If user exists: 
-        * Check if the auth_provider column is google, and if not, return an error. If no error: 
-        * Set auth_provider to google, delete existing jwt, create new tokens and jwt object, and return the tokens
-    If user doesn't exist:
-        * Create user with the credentials. The password will be a defined social secret we created for all social auth users.
-        * Create new tokens, jwt object, return tokens as response
+        Validate the auth token using a python google library.
 
-### Facebook Auth
-    Get auth token from a response in client when signin is initiated, Here's a link I created you can use to generate auth_token... [Creator Africa Facebook](https://creators-africa-test.netlify.app/fb-auth) You find the auth_token as 'accessToken' in browser's the console.
+        Compare google client ids to ensure the client_id in frontend is same as backend
 
-    Fill in the required fields as implemented by the schema (auth_token, is_creator). is_creator is optional because of login.
-    
-    Validate the auth token using a python facebook library.
-    
-    Register or login user based on the returned data (email, name). This works by checking for the user with that email in our db. 
-    
-    If user exists: 
-        * Check if the auth_provider column is facebook, and if not, return an error. If no error:
-        * Set auth_provider to facebook, delete existing jwt, create new tokens and jwt object, and return the tokens
-    
-    If user doesn't exist:
-        * Create user with the credentials. The password will be a defined social secret we created for all social auth users.
-        * Create new tokens, jwt object, return tokens as response
+        Register or login user based on the returned data (email, name). This works by checking for the user with that email in our db. 
+
+        If user exists: 
+            * Check if the auth_provider column is google, and if not, return an error. If no error: 
+            * Set auth_provider to google, delete existing jwt, create new tokens and jwt object, and return the tokens
+        If user doesn't exist:
+            * Create user with the credentials. The password will be a defined social secret we created for all social auth users.
+            * Create new tokens, jwt object, return tokens as response
+
+### Facebook Auth ([Frontend link](https://creators-africa-test.netlify.app/fb-auth))
+    I created a simple client page for testing. Check the link above... You'll find the auth_token as 'credential' in the browser's console after initiating the sign in.
+
+    While your backend server is still running:
+        Fill in the required fields as implemented by the schema (auth_token, is_creator). is_creator is optional because of login.
+
+        Validate the auth token using a python facebook library.
+
+        Register or login user based on the returned data (email, name). This works by checking for the user with that email in our db. 
+
+        If user exists: 
+            * Check if the auth_provider column is facebook, and if not, return an error. If no error:
+            * Set auth_provider to facebook, delete existing jwt, create new tokens and jwt object, and return the tokens
+
+        If user doesn't exist:
+            * Create user with the credentials. The password will be a defined social secret we created for all social auth users.
+            * Create new tokens, jwt object, return tokens as response
