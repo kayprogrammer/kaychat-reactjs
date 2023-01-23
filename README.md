@@ -1,6 +1,6 @@
 # KayChat React Application 
 
-This is a simple realtime chat application built with ReactJs and Firebase. 
+This is a simple realtime chat application built with ReactJs and Firebase DB. 
 
 ![alt text](https://github.com/kayprogrammer/kaychat-reactjs/blob/main/display.png?raw=true)
 
