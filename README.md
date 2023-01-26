@@ -9,7 +9,7 @@ This is a simple realtime chat application built with ReactJs and Firebase DB.
 * Download this repository
 
 Run:
-* `npm install` to install all dependencies
+* `npm install` to install all dependencies.
 * `npm start` to start the local server.
 
 Check [http://localhost:3000](http://localhost:3000) to view application on your browser.
