@@ -15,4 +15,4 @@ Run:
 Check [http://localhost:3000](http://localhost:3000) to view application on your browser.
 
 ### Live application.
-[Kaychat Live](https://kaychat.netlify.app)
+[Kaychat Live](https://kaychat.netlify.app).
