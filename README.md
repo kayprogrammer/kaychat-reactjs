@@ -6,7 +6,8 @@ A simple realtime chat application built with ReactJs and Firebase DB.
 
 ### How to Test Locally...
 
-* Download this repository
+* Download this repository or run:
+  `git clone git@github.com:kayprogrammer/kaychat-reactjs.git`
 
 Run:
 * `npm install` to install all dependencies.
