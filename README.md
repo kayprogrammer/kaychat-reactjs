@@ -12,7 +12,7 @@ Run:
 * `npm install` to install all dependencies.
 * `npm start` to start the local server.
 
-Check [http://localhost:3000](http://localhost:3000) to view application on your browser.
+Check [Kaychat Local](http://localhost:3000) to view application on your browser.
 
 ### Live application.
 [Kaychat Live](https://kaychat.netlify.app).
